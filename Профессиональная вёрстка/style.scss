@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    font-family: "Lato", sans-serif;
+}
+
 .header {
     background: #222222;
     padding: 18px 0;
@@ -78,6 +82,18 @@
             height: 79px;
         }
     }
+
+    &__intro_catalog {
+        height: 148px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__filters {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .intro {
@@ -87,9 +103,9 @@
     &__text {
         padding-right: 97px;
         padding-left: 16px;
-        width: 405px;
         border-left: 12px solid #f16d7f;
         line-height: 38px;
+        font-size: 32px;
     }
 
     &__decor_red {
@@ -102,7 +118,52 @@
         font-size: 48px;
         line-height: 58px;
     }
+
+    &__catalog {
+        background: #f1e4e6;
+        min-height: 148px;
+
+        &__text {
+            font-size: 24px;
+            line-height: 29px;
+            color: #f16d7f;
+        }
+
+        &__bread_crumbs {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #636363;
+        }
+
+        &__bread_crumbs:visited {
+            color: #f16d7f;
+            font-weight: bold;
+        }
+    }
 }
+
+.filters {
+    &__filter {
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        padding-right: 304px;
+        padding-bottom: 64px;
+        padding-top: 51px;
+    }
+
+    &__size {
+        font-size: 14px;
+        line-height: 17px;
+        color: #6f6e6e;
+
+    }
+
+    &__text:not(:first-child) {
+        padding-right: 10px;
+        padding-left: 28px;
+    }
 
 .preview {
     &__image:not(:last-child) {
@@ -236,7 +297,58 @@
         margin-bottom: 95px;
         border: solid;
     }
+
+    &__icons {
+        &__f {
+            padding: 8px 12px;
+            background: #ffffff;
+            height: 15px;
+            width: 10px;
+        }
+        &__f:hover {
+            background: #f16d7f;
+            color: #ffffff;
+        }
+
+        &__i {
+            padding: 8px 9px;
+            background: #ffffff;
+            height: 16px;
+            width: 10px;
+        }
+        &__i:hover {
+            background: #f16d7f;
+            color: #ffffff;
+        }
+
+        &__p {
+            padding: 8px 10px;
+            background: #ffffff;
+            height: 16px;
+            width: 12px;
+        }
+        &__p:hover {
+            background: #f16d7f;
+            color: #ffffff;
+        }
+
+        &__t {
+            padding: 8px 8px;
+            background: #ffffff;
+            height: 16px;
+            width: 15px;
+        }
+        &__t:hover {
+            background: #f16d7f;
+            color: #ffffff;
+        }
+    }
 }
+
+.link:hover {
+    color: #f16d7f;
+}
+
 .advantage {
     background: #222224;
     min-height: 341px;
