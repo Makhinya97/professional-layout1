@@ -179,9 +179,21 @@ body {
   margin-bottom: 128px;
 }
 
+.container__cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .intro {
   background: #f1e4e6;
+}
+
+.intro__index {
   height: 764px;
+  background: #f1e4e6;
 }
 
 .intro__text {
@@ -209,6 +221,7 @@ body {
 }
 
 .intro__catalog__text {
+  font-weight: normal;
   font-size: 24px;
   line-height: 29px;
   color: #f16d7f;
@@ -712,12 +725,216 @@ body {
 
 .description__trait {
   min-width: 641px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
 }
 
 .description__trait_pink {
   height: 3px;
   min-width: 63px;
   background: #ef5b70;
+}
+
+.cart__price {
+  font-size: 22px;
+  line-height: 26px;
+  color: #ef5b70;
+}
+
+.cart__quantity {
+  border: 1px solid #eaeaea;
+  margin-left: 24px;
+  padding: 2px 15px;
+}
+
+.cart__form {
+  padding-left: 129px;
+  width: 360px;
+}
+
+.cart__form__sub_total {
+  font-size: 11px;
+  line-height: 13px;
+  color: #4a4a4a;
+  padding-right: 34px;
+  padding-top: 39px;
+  padding-bottom: 12px;
+}
+
+.cart__form__grand_total {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding-bottom: 31px;
+  padding-right: 37px;
+}
+
+.cart__form__get_a_quote {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4a4a4a;
+  padding: 10px 14px 12px 15px;
+  border: 1px solid #a4a4a4;
+  background: #ffffff;
+  margin-bottom: 47px;
+}
+
+.cart__form__proceed {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-right: 43px;
+  padding-left: 41px;
+  background: #f16d7f;
+  border: none;
+  margin-bottom: 42px;
+  margin-top: 17px;
+}
+
+.cart__form span {
+  color: #f16d7f;
+}
+
+.cart__form h4 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding-top: 113px;
+  padding-bottom: 20px;
+}
+
+.cart__form input {
+  border: 1px solid #a4a4a4;
+  width: 259px;
+  height: 44px;
+  padding-left: 16px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.cart__form input:focus {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+
+.cart__form ul {
+  list-style: none;
+}
+
+.cart__form li {
+  padding-bottom: 20px;
+}
+
+.cart__form div {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 360px;
+}
+
+.cart__form hr {
+  width: 275px;
+}
+
+.cart__form article {
+  background: #f5f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cart__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart__buttons button {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding: 17px 40px;
+  background: #ffffff;
+  border: 1px solid #a4a4a4;
+  margin-top: 30px;
+  margin-bottom: 128px;
+}
+
+.cart .cart__cards {
+  width: 625px;
+  padding-top: 96px;
+}
+
+.cart .cart__cards figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+  -webkit-filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+          filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+  padding-bottom: 40px;
+}
+
+.cart .cart__cards figcaption {
+  width: 262px;
+}
+
+.cart .cart__cards img {
+  width: 262px;
+  height: 306px;
+  padding-right: 31px;
+}
+
+.cart .cart__cards h4 {
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  padding-top: 22px;
+  padding-bottom: 42px;
+}
+
+.cart .cart__cards ul {
+  list-style-type: none;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.cart .cart__cards li {
+  padding-bottom: 6px;
+}
+
+.cart .cart__cards svg {
+  padding-top: 26px;
+  padding-left: 57px;
+  padding-right: 22px;
 }
 /*# sourceMappingURL=style.css.map */
