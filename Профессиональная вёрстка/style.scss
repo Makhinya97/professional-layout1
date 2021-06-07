@@ -119,6 +119,10 @@ body {
         display: flex;
         flex-wrap: wrap;
     }
+
+    &__registration {
+        display: flex;
+    }
 }
 
 .intro {
@@ -332,6 +336,8 @@ body {
 
     &__pagination {
         padding-left: 430px;
+        padding-top: 18px;
+        padding-bottom: 96px;
     }
 }
 
@@ -703,7 +709,7 @@ body {
 
         input {
             border: 1px solid #a4a4a4;
-            width: 259px;
+            width: 360px;
             height: 44px;
             padding-left: 16px;
             font-weight: 300;
@@ -743,6 +749,7 @@ body {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            width: 360px;
         }
     }
 
@@ -806,6 +813,109 @@ body {
         svg {
             padding-top: 26px;
             padding-left: 57px;
+            padding-right: 22px;
+        }
+    }
+}
+
+.registration {
+    ul {
+        list-style-type: none;
+    }
+
+    &__form {
+        &__text {
+            border: 1px solid #a4a4a4;
+            width: 360px;
+            height: 44px;
+            padding-left: 16px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #222222;
+        }
+
+        h4 {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+
+        &__name {
+            padding-top: 64px;
+            padding-bottom: 20px;
+        }
+
+        &__details {
+            padding-top: 35px;
+            padding-bottom: 20px;
+        }
+
+        &__gender {
+            border: none;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: #000000;
+            padding-top: 34px;
+        }
+
+        &__join {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #ffffff;
+            padding: 17px 29px;
+            background: #f16d7f;
+            border: none;
+            margin-bottom: 96px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #b1b1b1;
+            padding-top: 15px;
+            padding-bottom: 39px;
+            width: 360px;
+        }
+
+        li:not(:last-child) {
+            padding-bottom: 21px;
+        }
+    }
+
+    &__info {
+        padding-left: 128px;
+
+        h4 {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            padding-top: 64px;
+            padding-bottom: 32px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            padding-bottom: 21px;
+        }
+
+        li {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            padding-bottom: 16px;
+        }
+
+        svg {
             padding-right: 22px;
         }
     }
