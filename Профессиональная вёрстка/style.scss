@@ -267,6 +267,7 @@ body {
         font-size: 14px;
         line-height: 17px;
         color: #6f6e6e;
+        display: flex;
     }
 
     &__text:not(:first-child) {
@@ -293,6 +294,39 @@ body {
         color: #6f6e6e;
         padding-top: 64px;
         padding-bottom: 48px;
+    }
+
+    &__checkbox {
+        display: flex;
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        width: 79px;
+        height: 103px;
+        z-index: 1;
+        background: #ffffff;
+        justify-content: space-evenly;
+        margin-left: -10px;
+
+        input {
+            margin-left: 9px;
+            margin-right: 9px;
+        }
+
+        div {
+            display: flex;
+        }
+    }
+
+    &__size {
+        padding-left: 28px;
+    }
+
+    &__size:hover &__checkbox {
+        display: block;
+        display: flex;
+        
     }
 }
 
