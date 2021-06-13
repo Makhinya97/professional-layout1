@@ -182,22 +182,84 @@ body {
         font-size: 14px;
         line-height: 17px;
         color: #000000;
-        padding-right: 304px;
+        padding-right: 390px;
         padding-bottom: 64px;
         padding-top: 51px;
 
+        content::marker {
+            display: none;
+        }
+
         &__content {
             box-sizing: border-box;
-            position: relative;
+            position: absolute;
             outline: none;
             border: none;
             width: 360px;
         }
 
+        &__content[open] {
+            width: 360px;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        }
+
+        &__content[open] > summary {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #ef5b70;
+            padding-bottom: 16px;
+            padding-left: 16px;
+            padding-top: 13px;
+        }
+
+        &__content[open] > svg {
+            fill: #ef5b70;
+        }
+
         &__category {
             position: absolute;
-            background-color: gold;
+            background-color: #ffffff;
             width: 360px;
+            z-index: 1;
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.21);
+            font-size: 14px;
+            line-height: 17px;
+
+            ul {
+                list-style-type: none;
+                padding-bottom: 13px;
+            }
+
+            li {
+                font-size: 14px;
+                line-height: 17px;
+                color: #6f6e6e;
+                padding-top: 11px;
+                padding-bottom: 11px;
+                padding-left: 34px;
+            }
+
+            summary {
+                border-left: 5px solid #ef5b70;
+                border-bottom: 1px solid #ebebeb;
+                height: 37px;
+                display: flex;
+                align-items: center;
+                padding-left: 11px;
+            }
+
+            details {
+                width: 327px;
+                padding-left: 17px;
+                padding-bottom: 18px;
+            }
+        }
+
+        &__category [open] {
+            font-size: 14px;
+            line-height: 17px;
+            color: #ef5b70;
         }
     }
 
@@ -385,7 +447,6 @@ body {
         padding-bottom: 96px;
     }
 }
-
 
 .link {
     text-decoration: none;
