@@ -10,15 +10,19 @@ body {
 .header {
     background: #222222;
     padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
 
     &__right {
         display: flex;
         align-items: flex-end;
+        padding-right: 380px;
     }
 
     &__left {
         display: flex;
         align-items: flex-end;
+        padding-left: 380px;
     }
 
     &__icon__left {
@@ -35,11 +39,6 @@ body {
     width: 100%;
     margin: 0 auto;
 
-    &__header {
-        display: flex;
-        justify-content: space-between;
-    }
-
     &__intro {
         display: flex;
         justify-content: flex-end;
@@ -48,6 +47,7 @@ body {
         background-image: url(img/intro_image.png);
         background-repeat: no-repeat;
         background-position: -228px bottom;
+        background-size: contain;
     }
 
     &__preview {
@@ -70,7 +70,7 @@ body {
     }
 
     &__footer {
-        height: 448px;
+        min-height: 448px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -129,7 +129,7 @@ body {
     background: #f1e4e6;
 
     &__index {
-        height: 764px;
+        height: 100vh;
         background: #f1e4e6;
     }
 
@@ -186,8 +186,8 @@ body {
         padding-bottom: 64px;
         padding-top: 51px;
 
-        content::marker {
-            display: none;
+        details > summary {
+            list-style-type: none;
         }
 
         &__content {
@@ -196,6 +196,7 @@ body {
             outline: none;
             border: none;
             width: 360px;
+            cursor: pointer;
         }
 
         &__content[open] {
@@ -211,9 +212,6 @@ body {
             padding-bottom: 16px;
             padding-left: 16px;
             padding-top: 13px;
-        }
-
-        &__content[open] > svg {
             fill: #ef5b70;
         }
 
@@ -268,6 +266,7 @@ body {
         line-height: 17px;
         color: #6f6e6e;
         display: flex;
+        cursor: default;
     }
 
     &__text:not(:first-child) {
@@ -312,6 +311,7 @@ body {
         input {
             margin-left: 9px;
             margin-right: 9px;
+            cursor: pointer;
         }
 
         div {
@@ -326,7 +326,6 @@ body {
     &__size:hover &__checkbox {
         display: block;
         display: flex;
-        
     }
 }
 
@@ -476,7 +475,9 @@ body {
     }
 
     &__pagination {
-        padding-left: 430px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
         padding-top: 18px;
         padding-bottom: 96px;
     }
@@ -515,6 +516,7 @@ body {
         &_text:hover {
             background: #f26376;
             color: #ffffff;
+            fill: #ffffff;
         }
 
         &_cart {
@@ -638,9 +640,6 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
 
-    &__top {
-    }
-
     &__image {
         font-size: 20px;
         line-height: 24px;
@@ -708,6 +707,7 @@ body {
             padding: 20px;
             border-top-right-radius: 30px;
             border-bottom-right-radius: 30px;
+            cursor: pointer;
         }
     }
 }
@@ -818,6 +818,7 @@ body {
             border: 1px solid #a4a4a4;
             background: #ffffff;
             margin-bottom: 47px;
+            cursor: pointer;
         }
 
         &__proceed {
@@ -833,6 +834,7 @@ body {
             border: none;
             margin-bottom: 42px;
             margin-top: 17px;
+            cursor: pointer;
         }
 
         span {
@@ -846,11 +848,12 @@ body {
             color: #222222;
             padding-top: 113px;
             padding-bottom: 20px;
+            width: 100%;
         }
 
         input {
             border: 1px solid #a4a4a4;
-            width: 360px;
+            width: 344px;
             height: 44px;
             padding-left: 16px;
             font-weight: 300;
@@ -874,7 +877,7 @@ body {
             padding-bottom: 20px;
         }
 
-        div {
+        .price {
             align-items: flex-end;
             display: flex;
             flex-direction: column;
@@ -908,6 +911,7 @@ body {
             border: 1px solid #a4a4a4;
             margin-top: 30px;
             margin-bottom: 128px;
+            cursor: pointer;
         }
     }
 
@@ -1021,6 +1025,7 @@ body {
             background: #f16d7f;
             border: none;
             margin-bottom: 96px;
+            cursor: pointer;
         }
 
         p {
@@ -1071,3 +1076,253 @@ body {
         }
     }
 }
+
+.menu {
+    background-color: #222;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+    padding: 0 33px 0 0;
+
+    .header__nav {
+        position: absolute;
+        top: 77px;
+        right: 0px;
+        z-index: 10;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    .nav {
+        width: 232px;
+        background-color: #fff;
+        height: calc(100vh - 40px);
+        padding: 20px;
+    }
+
+    .nav__wrap {
+        position: relative;
+        padding-top: 27px;
+        padding-left: 24px;
+    }
+
+    .nav__close {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+    }
+
+    .nav__title {
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        padding-bottom: 24px;
+        padding-left: 1px;
+    }
+
+    .nav__heading {
+        font-size: 14px;
+        line-height: 17px;
+        color: #f16d7f;
+        padding-bottom: 12px;
+    }
+
+    .nav__item {
+        list-style-type: none;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6f6e6e;
+        padding-bottom: 11px;
+    }
+}
+
+#burger {
+    display: none;
+}
+
+#burger:checked ~ .header__nav {
+    display: block;
+}
+
+#burger:not(checked) ~ .header__nav {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 736px;
+        width: 98%;
+
+        &__intro {
+            background-position: -40px;
+        }
+
+        &__advantage {
+            flex-direction: column;
+        }
+
+        &__footer {
+            flex-direction: column;
+        }
+
+        &__description {
+            max-width: none;
+            width: 100%;
+        }
+
+        &__cart {
+            justify-content: center;
+        }
+    }
+
+    .header {
+        &__left {
+            padding-left: 16px;
+        }
+
+        &__right {
+            padding-right: 16px;
+        }
+    }
+
+    .intro__index {
+        height: 368px;
+    }
+
+    .intro {
+        &__text {
+            background-position: -40px;
+            padding-right: 0;
+            font-size: 24px;
+            line-height: 29px;
+            color: #222222;
+        }
+
+        &__decor_black {
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 53px;
+            color: #222222;
+        }
+
+        &__decor_red {
+            font-size: 24px;
+            line-height: 29px;
+            color: #f16d7f;
+        }
+    }
+
+    .preview {
+        &__image:not(:last-child) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 233px;
+            height: 167px;
+        }
+
+        &__image:last-child {
+            width: 735px;
+            height: 116px;
+            padding-bottom: 164px;
+        }
+    }
+
+    .products {
+        &__heading__item {
+            padding-bottom: 3px;
+        }
+
+        &__text {
+            padding-bottom: 74px;
+        }
+    }
+
+    .link__products {
+        margin-top: 32px;
+        margin-bottom: 64px;
+    }
+
+    .advantage__image {
+        padding-top: 48px;
+    }
+
+    .advantage__image:last-child {
+        padding-bottom: 64px;
+    }
+
+    .footer {
+        background-size: auto;
+        background: url(img/photo_subscribe768.png);
+
+        &__image {
+            padding-top: 64px;
+            padding-bottom: 48px;
+        }
+
+        &__subscribe {
+            padding-bottom: 140px;
+        }
+    }
+
+    .products {
+        &__card:last-child {
+            display: none;
+        }
+
+        &__card {
+            margin-bottom: 16px;
+        }
+    }
+
+    .cart {
+        &__cards {
+            padding-top: 59px;
+            width: 100%;
+        }
+
+        &__buttons {
+            justify-content: space-around;
+        }
+
+        &__form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 0;
+            width: 100%;
+            padding-bottom: 128px;
+
+            &_form {
+                padding-right: 15px;
+                height: 272px;
+            }
+
+            h4 {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .registration {
+        &__info {
+            padding-left: 22px;
+
+            h4 {
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            p,
+            li {
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            span {
+                padding-left: 42px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px)
+
