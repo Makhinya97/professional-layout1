@@ -201,6 +201,7 @@ body {
 
         &__content[open] {
             width: 360px;
+            background: #ffffff;
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         }
 
@@ -919,14 +920,14 @@ body {
         width: 625px;
         padding-top: 96px;
 
-        figure {
+        .cart__img {
             display: flex;
             flex-direction: initial;
             filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
             padding-bottom: 40px;
         }
 
-        figcaption {
+        .cart__text {
             width: 262px;
         }
 
@@ -1330,6 +1331,10 @@ body {
             background-image: none;
             display: flex;
             justify-content: center;
+
+            &_catalog {
+                flex-direction: column;
+            }
         }
 
         &__preview {
@@ -1340,6 +1345,26 @@ body {
         &__footer_bottom {
             flex-direction: column-reverse;
             height: auto;
+        }
+
+        &__filters {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__products {
+            justify-content: center;
+        }
+
+        &__items__woman {
+            img {
+                height: 355px;
+            }
+        }
+
+        &__registration {
+            flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -1375,6 +1400,22 @@ body {
             font-size: 22px;
             line-height: 24px;
             color: #f16d7f;
+        }
+
+        &__catalog {
+            &__text {
+                padding-top: 24px;
+            }
+
+            &__bread_crumbs {
+                padding-bottom: 46px;
+            }
+        }
+
+        &__catalog {
+            &__text {
+                padding-top: 50px;
+            }
         }
     }
 
@@ -1414,19 +1455,139 @@ body {
         margin-bottom: 96px;
     }
 
-   .footer {
-    &__subscribe__text {
-        font-size: 14px;
-        line-height: 153.2%;
+    .footer {
+        &__subscribe__text {
+            font-size: 14px;
+            line-height: 153.2%;
+        }
+
+        &__bottom__text {
+            padding-bottom: 9px;
+        }
+
+        figure {
+            padding-top: 43px;
+            padding-bottom: 40px;
+        }
     }
 
-    &__bottom__text {
-        padding-bottom: 9px;
+    .filters {
+        &__filter {
+            padding-right: 68px;
+
+            &__content {
+                width: 0px;
+
+                span {
+                    display: none;
+                }
+
+                svg {
+                    width: 37px;
+                    height: 25px;
+                }
+            }
+        }
+
+        &__catalog {
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        &__text:not(:first-child) {
+            padding-right: 9px;
+            padding-left: 23px;
+        }
+
+        &__text:first-child {
+            padding-right: 9px;
+        }
+
+        &__size {
+            padding-left: 23px;
+        }
+
+        &__product {
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
 
-    figure {
-        padding-top: 43px;
-        padding-bottom: 40px;
+    .products {
+        &__pagination {
+            padding-top: 40px;
+            padding-bottom: 64px;
+        }
     }
-   }
+
+    .description {
+        &__text {
+            width: 326px;
+        }
+    }
+
+    .cart {
+        &__cards {
+            width: 358px;
+            padding-top: 39px;
+
+            img {
+                width: 143px;
+                height: 188px;
+                padding-right: 17px;
+            }
+
+            svg {
+                padding-top: 17px;
+                padding-right: 13px;
+                padding-left: 31px;
+            }
+        }
+
+        &__text {
+            width: 143px;
+
+            h4 {
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            ul {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+        &__prise {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &__form {
+            flex-direction: column;
+
+            &_form {
+                padding-right: 0;
+            }
+
+            .heading {
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            article {
+                margin-top: 48px;
+            }
+        }
+    }
+
+    .registration {
+        &__form__text {
+            width: 344px;
+        }
+
+        &__info {
+            padding-left: 9px;
+        }
+    }
 }
