@@ -1415,7 +1415,7 @@ body {
     display: none;
   }
   .products__card {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
   }
   .cart__cards {
     padding-top: 59px;
@@ -1460,6 +1460,92 @@ body {
   }
   .registration__info span {
     padding-left: 42px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container__intro {
+    background-image: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container__preview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container__footer_bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+  }
+  .header__right figure {
+    display: none;
+  }
+  .header__right .menu {
+    padding: 0;
+  }
+  .intro__text {
+    background-position: -40px;
+    padding-right: 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+  }
+  .intro__decor_black {
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 46px;
+    color: #222222;
+  }
+  .intro__decor_red {
+    font-size: 22px;
+    line-height: 24px;
+    color: #f16d7f;
+  }
+  .preview__image:not(:last-child) {
+    padding-top: 0px;
+    padding-bottom: 32px;
+    width: 343px;
+    height: 247px;
+  }
+  .preview__image:last-child {
+    width: 343px;
+    height: 111px;
+    padding-bottom: 64px;
+  }
+  .preview__image:first-child {
+    padding-top: 64px;
+  }
+  .products__heading h1 {
+    padding-top: 0;
+  }
+  .products__heading p {
+    padding-bottom: 64px;
+  }
+  .link__products {
+    margin-top: 40px;
+    margin-bottom: 96px;
+  }
+  .footer__subscribe__text {
+    font-size: 14px;
+    line-height: 153.2%;
+  }
+  .footer__bottom__text {
+    padding-bottom: 9px;
+  }
+  .footer figure {
+    padding-top: 43px;
+    padding-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
