@@ -1269,7 +1269,7 @@ body {
         }
 
         &__card {
-            margin-bottom: 16px;
+            margin-bottom: 15px;
         }
     }
 
@@ -1324,5 +1324,109 @@ body {
     }
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 375px) {
+    .container {
+        &__intro {
+            background-image: none;
+            display: flex;
+            justify-content: center;
+        }
 
+        &__preview {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__footer_bottom {
+            flex-direction: column-reverse;
+            height: auto;
+        }
+    }
+
+    .header {
+        &__right {
+            figure {
+                display: none;
+            }
+
+            .menu {
+                padding: 0;
+            }
+        }
+    }
+
+    .intro {
+        &__text {
+            background-position: -40px;
+            padding-right: 0;
+            font-size: 20px;
+            line-height: 24px;
+            color: #222222;
+        }
+
+        &__decor_black {
+            font-weight: 900;
+            font-size: 38px;
+            line-height: 46px;
+            color: #222222;
+        }
+
+        &__decor_red {
+            font-size: 22px;
+            line-height: 24px;
+            color: #f16d7f;
+        }
+    }
+
+    .preview {
+        &__image:not(:last-child) {
+            padding-top: 0px;
+            padding-bottom: 32px;
+            width: 343px;
+            height: 247px;
+        }
+
+        &__image:last-child {
+            width: 343px;
+            height: 111px;
+            padding-bottom: 64px;
+        }
+
+        &__image:first-child {
+            padding-top: 64px;
+        }
+    }
+
+    .products {
+        &__heading {
+            h1 {
+                padding-top: 0;
+            }
+
+            p {
+                padding-bottom: 64px;
+            }
+        }
+    }
+
+    .link__products {
+        margin-top: 40px;
+        margin-bottom: 96px;
+    }
+
+   .footer {
+    &__subscribe__text {
+        font-size: 14px;
+        line-height: 153.2%;
+    }
+
+    &__bottom__text {
+        padding-bottom: 9px;
+    }
+
+    figure {
+        padding-top: 43px;
+        padding-bottom: 40px;
+    }
+   }
+}
